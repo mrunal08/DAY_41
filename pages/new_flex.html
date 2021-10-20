@@ -1,0 +1,81 @@
+<html lang="en">
+    <style>
+        body {
+            color : rgb(250, 228, 228);
+            padding: 2em; 
+        }
+
+        .headercontainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .footercontainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .maincontainer {
+            display: flex;
+            font-weight: bold;
+            text-align: center;
+        }
+        .maincontaintentItem{
+                text-align:left;
+                background : rgb(56, 101, 153);
+            }  
+        article {
+                padding: 10px;
+                margin: 10px;
+                background : rgb(12, 110, 110);
+            }   
+        .sidebarLeftItem{ background : rgb(247, 112, 142); }
+        .sidebarRightItem{ background : rgb(250, 144, 95); }
+
+        .sidebarItem{flex: 1 0 0; border:0px solid rgb(194, 252, 194);}
+        .maincontaintentItem {flex: 3 0px;}
+        .sidebarLeftItem{order: 1;}
+        .maincontaintentItem{order: 2;}
+        .sidebarRightItem{order: 3;}    
+    </style>
+    <head> </head>
+    <body>
+        <header class="headercontainer"> <h1>  Flexbox Example </h1></header>
+        <div = class="maincontainer"> 
+            <section class="maincontaintentItem">
+                <article>
+                    <h2> First article </h2>
+                    <p>Tacos actully,microdosing,power-over semidiotes retro  fanny pack  everday portland ever
+                        vinyl typewriter.Tacos PBR&B pork belly everyday carry  enni pickuld siirracha normacro
+                        single origin coffee cold pressed.</p>
+                </article>
+                <article>
+                    <h2> Second article </h2>
+                    <p>Tacos actully,microdosing,power-over semidiotes retro  fanny pack  everday portland ever
+                        vinyl typewriter.Tacos PBR&B pork belly everyday carry  enni pickuld siirracha normacro
+                        single origin coffee cold pressed.</p>
+                </article>
+                <article>
+                    <h2> Third article </h2>
+                    <p>Tacos actully,microdosing,power-over semidiotes retro  fanny pack  everday portland ever
+                        vinyl typewriter.Tacos PBR&B pork belly everyday carry  enni pickuld siirracha normacro
+                        single origin coffee cold pressed.</p>
+
+                    <p>Carry food XOXO +1 knifield bitteld  small patch bacalo 8bitTacos microdosing pour over semiconduct diotes banjo retro fenny  everyday carry viney typewriter
+                        vinyl typewriter.Tacos PBR&B pork belly everyday carry  enni pickuld siirracha normacro
+                        single origin coffee cold pressed.</p>
+                </article>
+            </section>
+            <sidebar class="sidebarItem sidebarLeftItem"><div class="center"><p> Left side bar </p> </div></sidebar>
+            <sidebar class="sidebarItem sidebarRightItem"><div class="center"><p> Right side bar </p> </div></sidebar>
+        </div>
+        <footer class="footercontainer">Footer</footer>
+        <script class="text/javascript">_</script>
+    </body>
+</html>
